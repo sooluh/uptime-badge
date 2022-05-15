@@ -9,7 +9,7 @@ class Routes extends Controller {
 
     protected routes(app: FastifyInstance): void {
         app.get('/', this.home)
-        app.get('/badges/:id', this.badges)
+        app.get('/:id', this.endpoint)
     }
 
     protected async override(_request: FastifyRequest, reply: FastifyReply): Promise<void> {

@@ -1,7 +1,7 @@
 {
   "name": "@sooluh/uptime-badge",
   "version": "0.0.1",
-  "description": "Simple proxy to display shields.io badges based on uptime status from betteruptime.com",
+  "description": "Simple JSON endpoint to display shields.io badge based on uptime status from betteruptime.com",
   "main": "src/app.js",
   "scripts": {
     "prebuild": "del-cli \"./src/*.js\"",
@@ -16,6 +16,8 @@
     "url": "git+https://github.com/sooluh/uptime-badge.git"
   },
   "keywords": [
+    "json",
+    "endpoint",
     "shields.io",
     "badges",
     "uptime",

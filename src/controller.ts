@@ -8,7 +8,7 @@ class Controller {
         return reply.redirect(302, repository)
     }
 
-    public async badges(request: FastifyRequest, reply: FastifyReply): Promise<void> {
+    public async endpoint(request: FastifyRequest, reply: FastifyReply): Promise<void> {
         const {
             // @ts-ignore
             label = 'website',
@@ -17,13 +17,13 @@ class Controller {
             // @ts-ignore
             style = 'flat',
             // @ts-ignore
-            down_color = '#e05d44',
-            // @ts-ignore
             down_message = 'down',
             // @ts-ignore
-            up_color = '#4c1',
+            down_color = '#e05d44',
             // @ts-ignore
             up_message = 'up',
+            // @ts-ignore
+            up_color = '#4c1',
             // @ts-ignore
             logo = undefined,
             // @ts-ignore
